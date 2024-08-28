@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cadastro de Máquinas</title>
+</head>
+<body>
+    <main>
+    <header>
+        
+        <h1><i class="fa-solid fa-fax"></i> CADASTRO DE MÁQUINAS</h1>
+    </header>
+    <section>
+    <form>
+        <article>
+            <label for="nmmaq"><b><i class="fa-solid fa-signature"></i> Nome da máquina</b></label>
+            <input type="text" id="nmmaq" name="nmmaq">
+        </article>
+        <article class="listp">
+            
+            <p><i class="fa-solid fa-list-ul"></i> Lista de peças:</p>
+            <label for="pecas">Peça:</label>
+            <select name="pecas" id="pecas">
+            <option value="peca1">Peça 1</option>
+            <option value="peca1">Peça 2</option>
+            <option value="peca1">Peça 3</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="100" step="1">
+
+            <label for="valor">Valor Total:</label>
+            <input class="val" type="text" id="valor" name="valor" step="0.01" min="0" placeholder="R$0,00">
+        </article> 
+        <article>
+            <label for="valorcust"><b> <i class="fa-solid fa-money-bill"></i> Valor de Custo da máquina em Reais:</b></label>
+            <input class="val" type="text" id="valorcust" name="valorcust" step="0.01" min="0" placeholder="R$0,00">
+        </article>
+        <article>
+            <label for="valordol"><b><i class="fa-solid fa-money-check-dollar"></i> Valor de Custo da máquina em Dólares:</b></label>
+            <input class="val" type="text" id="valordol" name="valordol" step="0.01" min="0" placeholder="$0,00">
+        </article>
+        <button type="button">CADASTRAR</button>
+    </form>
+    </main> 
+    </section>   
+</body>
+</html>
+
+<!-- ● Cadastro de máquinas
+○ nome da máquina
+○ lista de peças
+■ peça
+■ quantidade
+■ valor total
+○ valor de custo da máquina em reais
+○ valor de custo da máquina em dólares -->
